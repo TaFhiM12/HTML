@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popular Destinations</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      max-width: 900px;
+      text-align: center;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .card-container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
+      width: 300px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h3 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .card-content p {
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">Popular Destinations</div>
+    <div class="card-container">
+      <div class="card">
+        <img src="source/beachPhoto.jpg" alt="Tropical Beaches">
+        <div class="card-content">
+          <h3>Tropical Beaches</h3>
+          <p>Relax on white sands and enjoy crystal-clear waters.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="source/Badminton_-5c4f829e-9694-45e3-b95a-5e4cc54b313f.jpg" alt="Mountain">
+        <div class="card-content">
+          <h3>Mountain</h3>
+          <p>Explore and create adventure.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
